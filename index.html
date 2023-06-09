@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>kconk: Studying Made Fun</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="loading-cover">Loading...</div>
+        <div id="left-sidebar">
+            <button>≡</button>
+            <br>
+            <div id="debug"><span style="font-variant: small-caps">Empty</span></div>
+        </div>
+        <div id="right-sidebar">
+            <div class="row" id="row-0">
+                <div class="counter" id="double-jumps-left"><img src="textures/z.jpg" />x<span id="djs-value">0</span></div>
+                <div class="counter" id="shield-hits-left"><img src="textures/x.jpg" />x<span id="shield-value">0</span></div>
+            </div>
+
+            <div class="row" id="row-1">
+                <div class="tool" id="parachute"><img src="textures/crosshair.png" />F</div>
+                <div class="tool" id="grapple"><img src="textures/unused/Untitled.png" />G</div>
+            </div>
+
+            <div class="row" id="row-2">
+                <div class="item" id="item-1"><img src="textures/-z.jpg" />1</div>
+                <div class="item" id="item-2"><img src="textures/-x.jpg" />2</div>
+            </div>
+
+            <div class="row" id="row-3">
+                <div class="item" id="item-3"><img src="textures/y.jpg" />3</div>
+                <div class="item" id="item-4"><img src="textures/-y.jpg" />4</div>
+            </div>
+        </div>
+        <img id="crosshair" src="textures/crosshair.png" />
+        <audio id="music"></audio>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="three.min.js"></script>
+        <script src="PointerLockControls.js"></script>
+        <script src="setup.js"></script>
+    </body>
+</html>
