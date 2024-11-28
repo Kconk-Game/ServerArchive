@@ -1,0 +1,3 @@
+# Don't upload node_modules, the closest thing to black holes.
+/node_modules
+/package-lock.json

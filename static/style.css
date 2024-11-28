@@ -14,8 +14,18 @@ html, body {
 }
 
 canvas {
-    position: fixed;
     outline: none;
+}
+
+.undertable {
+    transform-origin: 0 0;
+    border-collapse: collapse;
+}
+.name {
+    border-right: 1px solid black;
+}
+.undertable td {
+    border-top: 1px solid black;
 }
 
 #debug {
@@ -25,7 +35,6 @@ canvas {
     margin: 0;
     font-family: Jost, monospace;
     font-size: 100%;
-    white-space: pre;
 }
 
 #crosshair {
@@ -54,17 +63,42 @@ canvas {
     z-index: 8;
 }
 
-#loading-cover {
+#loading-cover, #question-overlay {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rebeccapurple;
-    z-index: 10;
     text-align: center;
     font-size: 2rem;
     line-height: 2rem;
     font-family: Jost, sans-serif;
+}
+#loading-cover {
+    background-color: rebeccapurple;
     padding-top: calc(50vh - 1rem);
+    z-index: 16
+}
+#question-overlay {
+    background-color: lightgray;
+    z-index: 10;
+    display: none;
+}
+.qimg {
+    border: 4px solid black;
+    width: 100px;
+}
+#popup-text {
+    font-family: Jost, sans-serif;
+    width: 80vw;
+    height: 20vh;
+    background-color: white;
+    border: 4px solid black;
+    outline: 1px solid white;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
 }

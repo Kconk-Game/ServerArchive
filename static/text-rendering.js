@@ -85,6 +85,6 @@ class Text {
     }
 }
 
-let menuScript = document.createElement("script");
-menuScript.src = "socketio-test.js";
-document.body.appendChild(menuScript);
+let playerScript = document.createElement("script");
+playerScript.src = "player-class.js";
+document.body.appendChild(playerScript);
